@@ -3,14 +3,13 @@ import "./Expenses.css";
 import React, { useState } from 'react'; // React Import not needed but JSX uses this under the hood
 import ExpenseItem from "./ExpenseItem";
 import Card from "../UI/Card";
-import ExpensesFilter from "../FilterExpense/ExpensesFilter";
+import ExpensesFilter from "./ExpensesFilter";
 
 const Expenses = (props) => {
 
   const [filteredYear, setFilteredYear] = useState("2020")
 
   const filterChangeHandler = (selectedYear) => {
-    console.log("in Expenses.js");
     setFilteredYear(selectedYear);
   }
 
