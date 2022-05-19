@@ -1,9 +1,11 @@
 import "./Expenses.css";
 
+import React from 'react'; // React Import not needed but JSX uses this under the hood
 import ExpenseItem from "./ExpenseItem";
 import Card from "../UI/Card";
 
 const Expenses = (props) => {
+
   return (
     <Card className="expenses">
       <ExpenseItem

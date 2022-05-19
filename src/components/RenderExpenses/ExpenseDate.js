@@ -1,5 +1,7 @@
 import "./ExpenseDate.css";
 
+import React from 'react';// React Import not needed but JSX uses this under the hood
+
 const ExpenseDate = (props) => {
   const month = props.date.toLocaleString("en-GB", { month: "long" });
   const year = props.date.getFullYear();

@@ -4,7 +4,7 @@
     align-items: center;
     padding: 1rem;
     margin: 1rem 0;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(30, 30, 30, 0.15);
   }
   
   .expense-item__description {
@@ -33,7 +33,7 @@
     background-color: rgba(0,0,0,0.2);;
     border: 1px solid white;
     padding: 0.5rem 2rem;
-    border-radius: 12px;
+    border-radius: 6px;
   }
   
   @media (min-width: 580px) {

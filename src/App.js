@@ -1,8 +1,11 @@
 // LEGACY WAY TO INCLUDE JSX
-//import React from 'react';
+// import React from 'react'; import React from 'react'; // React Import not needed but JSX uses this under the hood
 
 import "./App.css";
+
+
 import Expenses from "./components/RenderExpenses/Expenses";
+import NewExpense from "./components/NewExpense/NewExpense";
 
 const App = () => {
   const expenses = [
@@ -24,8 +27,14 @@ const App = () => {
       title: "New Desk (Wooden)",
       amount: 450,
       date: new Date(2021, 5, 12),
-    },
+    }
   ];
+
+  const addExpenseHandler = (expense) => {
+    console.log("In App.js");
+    console.log(expense);
+    console.log(expenses);
+  };
 
   // LEGACY WAY TO INCLUDE JSX
   // you can only return one thing in a function.
@@ -41,9 +50,10 @@ const App = () => {
   return (
     <div className="app-container">
       <h2 className="app-heading">Ravi's Expense Tracker</h2>
+      <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses items={expenses} />
     </div>
   );
-}
+};
 
 export default App;
