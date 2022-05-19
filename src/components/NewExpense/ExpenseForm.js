@@ -29,7 +29,7 @@ const ExpenseForm = (props) => {
 
   const submitHandler = (event) => {
 
-    console.log(event);
+    // console.log(event);
     
     event.preventDefault(); // Method Built in to vanilla JS to stop reloading page on submission.
 
